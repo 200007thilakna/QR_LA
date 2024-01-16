@@ -1,8 +1,6 @@
 name: learn-github-actions
 run-name: ${{ github.actor }} is learning GitHub Actions
-on:
-  schedule:
-    - cron: '*/2 * * * *'  # Run every two minutes
+on: [push]
 jobs:
   check-bats-version:
     runs-on: ubuntu-latest
