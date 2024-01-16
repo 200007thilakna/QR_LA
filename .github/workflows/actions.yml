@@ -1,5 +1,5 @@
 name: actions
-run-name: ${{ github.actor }} is learning GitHub Actions
+
 on:
   schedule:
     - cron:  '5 * * * *' # Run every five minutes
