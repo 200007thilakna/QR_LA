@@ -2,7 +2,7 @@ name: actions
 
 on:
   schedule:
-    - cron:  '5 * * * *' # Run every five minutes
+    - cron:  '5 13 * * *' # Run every five minutes
 jobs:
   build:
     runs-on: ubuntu-latest
