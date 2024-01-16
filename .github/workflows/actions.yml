@@ -2,7 +2,7 @@ name: actions
 run-name: ${{ github.actor }} is learning GitHub Actions
 on:
   schedule:
-    - cron:  '5 * * * *' # Run every two minutes
+    - cron:  '5 * * * *' # Run every five minutes
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -19,5 +19,5 @@ jobs:
         run: |
           python -m pip install --upgrade pip
 
-      - name: execute py script # run main.py (update script name if needed)
+      - name: execute py script
         run: python v3.py
